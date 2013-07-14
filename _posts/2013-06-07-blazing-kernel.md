@@ -48,6 +48,15 @@ XDA Thread: [Link](http://forum.xda-developers.com/showthread.php?t=2275275)
 </div>
 
 <div class="btn-group">
+  <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Download v11<span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="http://www.androidfilehost.com/?fid=13858085825318748717">CWM6 version</a></li>
+    <li><a href="http://www.androidfilehost.com/?fid=23017610006234460">TWRP version</a></li>
+    <li><a href="http://www.androidfilehost.com/?fid=13858085825318748567">PHILZ version</a></li>
+  </ul>
+</div>
+
+<div class="btn-group">
   <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Download v10<span class="caret"></span></button>
   <ul class="dropdown-menu">
     <li><a href="http://www.androidfilehost.com/?fid=22964708692721679">CWM6 version</a></li>
@@ -90,6 +99,9 @@ Ho yeah!!! I finally made it! A kernel similar to Siyah kernel! You can use this
 - swap support
 - zRAM support
 - exFAT module support
+- Dynamic Fsync
+- Dynamic Dirty Page Writeback
+- Battery Life eXtender (BLX)
 - Miscellaneous tweaks
 
 ####Stock only features:
@@ -129,6 +141,19 @@ Flash via stock or custom recovery (Safest and easiest method):
 5. Reboot. It may take a little while as the kernel has lots of things to configure.
 
 ##Changelog
+	v11:
+	- Updated to Linux kernel 3.0.75
+	- BLX
+	- Dynamic Fsync
+	- Dynamic Dirty Page Writeback
+	- Dyanmic mutex spin management
+	- CRC32 algorithm
+	- Updated voltage control
+	- Latest sync with CM for better compatibility
+	- Fixed MTP not working in stock for certain people
+	- Philz recovery now available!
+	- Compiled using Linaro 4.7.4 toolchain 
+
 	v10:
 	- Updated to Linux kernel 3.0.60 (this is a real update, applied patches step by step instead of skiping those in between 
 	(there's one kernel that skipped most of the patches and went to 3.0.75 straight away lol, reverted the 3.0.76 and applied 3.0.77, and claims that it is on 3.0.77 now...lol...and I tried to advice him, but always ignored...:silly:))
